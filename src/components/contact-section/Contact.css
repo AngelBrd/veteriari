@@ -1,0 +1,56 @@
+.contact-section {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-section h3 {
+    margin: 0;
+    width: 40%;
+}
+
+.contact-section p {
+    width: 40%;
+    margin: 0;
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.contact-section .contact-btn {
+    background-color: #ff8c42;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: .6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-section img {
+    left: 40%;
+    top: 1em;
+    width: 20%;
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-section h3 {
+        width: 100%;
+    }
+    
+    .contact-section p {
+        width: 100%;
+        padding: 10px 0 20px;
+    }
+
+    .contact-section img {
+        left: 15%;
+        top: -1.5em;
+        width: 70%;
+        transform: rotate(45deg);
+    }
+}

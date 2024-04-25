@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 5px 120px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 5px 20px;
+    font-size: .9em;
+  }
+}
