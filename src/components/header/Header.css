@@ -9,7 +9,7 @@ header {
 }
 
 header img {
-    width: 120px;
+    width: 250px;
     height: 50px;
 }
 
@@ -41,10 +41,26 @@ header ul .visit-btn {
     border-radius: 10px;
     cursor: pointer;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.visit-btn:hover {
+    background-color: #d86924;
 }
 
 @media only screen and (max-width: 480px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     header nav {
         display: none;
+    }
+
+    header img {
+        width: 180px;
     }
 }  

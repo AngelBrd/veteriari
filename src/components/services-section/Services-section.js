@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './Services-section.css';
+import PerakeetImg from '../../assets/images/perakeet-img.png'
 import VisitasImg from '../../assets/images/visitas.svg';
 import InjectionImg from '../../assets/images/injection.svg';
 import EutanasiaImg from '../../assets/images/eutanasia.svg';
@@ -9,9 +10,16 @@ import VideoChatImg from '../../assets/images/videochat.svg';
 function ServicesSection() {
   return (
     <><section className='services-section'>
-          <h3>Cuidado Especializado para tus mascotas</h3>
-          <p>Me dedico a proporcionar una experiencia excepcional tanto para ti como para tu querida mascota. Mi compromiso es ofrecer cuidados expertos y compasivos, asegurando que cada paciente reciba la atención individualizada que merece.</p>
-          <p>Me esfuerzo por crear un ambiente donde tanto tú como tu mascota se sientan bienvenidos y cómodos en cada visita. Tu satisfacción y el bienestar de tu compañero son mi principal prioridad.</p>
+        <div className='flex-container'>
+            <div>
+            <h3 className='subtitle'>Cuidado Especializado para tus mascotas</h3>
+            <p>Me dedico a proporcionar una experiencia excepcional tanto para ti como para tu querida mascota. Mi compromiso es ofrecer cuidados expertos y compasivos, asegurando que cada paciente reciba la atención individualizada que merece.</p>
+            <p>Me esfuerzo por crear un ambiente donde tanto tú como tu mascota se sientan bienvenidos y cómodos en cada visita. Tu satisfacción y el bienestar de tu compañero son mi principal prioridad.</p>
+            </div>
+            <div>
+                <img src={PerakeetImg} className='perakeet-img'></img>
+            </div>
+        </div>
       </section><section className='services-icons'>
             <div className='service-icon'>
                 <img src={VisitasImg}></img>

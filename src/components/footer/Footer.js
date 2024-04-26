@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './Footer.css';
+import DogImg from '../../assets/images/dog-img.png'
 import XIcon from '../../assets/images/x-icon.svg';
 import InstaIcon from '../../assets/images/insta-icon.svg';
 import FacebookIcon from '../../assets/images/facebook-icon.svg';
@@ -16,6 +17,7 @@ function Footer() {
                 <a src='/'><img src={FacebookIcon} className='facebook-icon'></img></a>
             </div>
             <p>Copyright © 2024 Veteriari</p>
+            <img src={DogImg} className='dog-img'></img>
         </footer>
     </section>
   );

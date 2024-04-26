@@ -24,19 +24,19 @@ section img {
 
 section .img-bone {
     left: -.6em;
-    width: 33%;
+    width: 35%;
     transform: rotate(45deg);
 }
 
 section .img-paw {
-    left: 24em;
-    bottom: 1em;
+    left: 22em;
+    bottom: 2em;
     transform: rotate(55deg);
 }
 
 section .img-paw2 {
     left: 30em;
-    top: 1em;
+    top: 8em;
     transform: rotate(55deg);
 }
 
@@ -47,8 +47,8 @@ section .img-paw3 {
 }
 
 section .img-paw4 {
-    right: 10em;
-    top: -2em;
+    right: 8em;
+    top: 2em;
     transform: rotate(55deg);
 }
 

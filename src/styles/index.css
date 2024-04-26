@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  color: #231942;
   padding: 5px 120px;
   box-sizing: border-box;
   font-family: "Quicksand", sans-serif;
@@ -7,9 +8,53 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.subtitle::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5.5em;
+  width: 55%;
+  height: 10px;
+  background-color: #ffe2cf;
+  border-radius: 5px;
+  opacity: .8;
+  z-index: -1;
+}
+
+.subtitle2::after {
+  content: '';
+  position: absolute;
+  left: 20%;
+  top: 1.9em;
+  width: 60%;
+  height: 10px;
+  background-color: #ffe2cf;
+  border-radius: 5px;
+  opacity: .8;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 480px) {
   body {
     padding: 5px 20px;
     font-size: .9em;
+  }
+
+  .subtitle::after {
+    top: 5em;
+    width: 90%;
+  }
+  
+  .subtitle2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.9em;
+    width: 100%;
+    height: 10px;
+    background-color: #ffe2cf;
+    border-radius: 5px;
+    opacity: .8;
+    z-index: -1;
   }
 }

@@ -5,7 +5,7 @@
 }
 
 .prices-section .principal-p {
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 10px;
     margin-top: 30px;
     color: #ff8c42;
@@ -36,6 +36,11 @@
     color: #ff8c42;
     font-size: 1.4em;
     margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.card-body img {
+    width: 35px;
 }
 
 .card-content {
@@ -74,15 +79,17 @@
 
 .service-includes img {
     position: relative;
+    margin-left: 20px;
 }
 
 .price-p {
     color: #ff8c42;
     font-weight: 600;
+    margin-left: 30px !important;
 }
 
 .card-btn {
-    font-size: .7em;
+    font-size: .9em;
     font-weight: 600;
     background-color: #ff8c42;
     color: white;
@@ -95,12 +102,17 @@
     margin-top: 30px;
     margin-bottom: -60px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-btn:hover {
+    background-color: #d86924;
 }
 
 @media only screen and (max-width: 480px) {
     .prices-section .cards-container {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 60px;
     }
 
     .prices-section .cards-container .card {
@@ -122,6 +134,14 @@
 
     .price-p {
         margin-left: 10px !important;
+    }
+
+    .card-price {
+        font-size: 1.2em;
+    }
+
+    .card-btn {
+        font-size: 1em;
     }
 
 }

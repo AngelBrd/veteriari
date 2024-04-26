@@ -5,7 +5,7 @@ import CheckImg from '../../assets/images/check.svg';
 function PricesSection() {
   return (
     <section className='prices-section'>
-      <h3>Precios veterinario a domicilio</h3>
+      <h3 className='subtitle2'>Precios veterinario a domicilio</h3>
       <div className='cards-container'>
         <div className='card'>
           <div className='card-content'>

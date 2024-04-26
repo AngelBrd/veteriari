@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import './Welcome.css';
+import WelcomeImg from '../../assets/images/welcome-img.png'
 
 function Welcome() {
   return (
@@ -12,6 +13,7 @@ function Welcome() {
             <button className='whatsapp-btn'>Whatsapp</button>
         </div>
         <div class="wave-container"></div>
+        <img src={WelcomeImg} className='welcome-img'></img>
     </main>
   );
 }
