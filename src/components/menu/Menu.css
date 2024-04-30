@@ -9,29 +9,6 @@
     position: relative;
     top: -30px;
   }
-
-  .bm-burger-button {
-    
-  }
-  
-  .bm-item {
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  .bm-item a {
-    color: #d8d8d8;
-    text-decoration: none;
-  }
-  
-  .bm-item:hover {
-    color: white;
-  }
-  
-  .bm-cross-button {
-    height: 54px;
-    width: 54px;
-  }
   
   .bm-cross {
     background: white;
@@ -45,11 +22,11 @@
     right: 0;
   }
   
-/* @media only screen and (max-width: 480px) {
-    .menu {
+@media only screen and (max-width: 480px) {
+    /* .menu {
         display: flex;
         width: 100%;
         align-items: center;
         justify-content: center;
-    }
-}   */
+    } */
+}  

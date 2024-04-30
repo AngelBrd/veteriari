@@ -72,7 +72,7 @@ section .img-paw4 {
 
     section .img-bone {
         left: 0;
-        top: -11%;
+        top: -3.8em;
         width: 80%;
         transform: rotate(45deg);
     }

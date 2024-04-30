@@ -9,7 +9,7 @@ function Welcome() {
         <h1>Veteriari</h1>
         <h2>Servicio veterinario a domicilio</h2>
         <div>
-            <button className='consulta-btn'>Pedir consulta a domicilio</button>
+            <button className='consulta-btn'>Solicitar consulta</button>
             <button className='whatsapp-btn'>Whatsapp</button>
         </div>
         <div class="wave-container"></div>
