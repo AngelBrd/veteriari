@@ -11,12 +11,12 @@ function Footer() {
   return (
     <section className='section-footer'>
         <footer>
-            <div data-aos="fade-up">
+            <div data-aos="fade-in">
                 <a src='/'><img src={XIcon} className='x-icon'></img></a>
                 <a src='/'><img src={InstaIcon} className='insta-icon'></img></a>
                 <a src='/'><img src={FacebookIcon} className='facebook-icon'></img></a>
             </div>
-            <p data-aos="fade-up">Copyright © 2024 Veteriari</p>
+            <p data-aos="fade-in">Copyright © 2024 Veteriari</p>
             <img src={DogImg} className='dog-img' data-aos="fade-in"></img>
         </footer>
     </section>
