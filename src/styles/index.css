@@ -42,7 +42,7 @@ body {
 
   .subtitle::after {
     top: .9em;
-    width: 90%;
+    width: 100%;
   }
   
   .subtitle2::after {

@@ -8,6 +8,10 @@ section {
     font-size: 1.8em;
 }
 
+.about-section {
+    gap: 50px;
+}
+
 section h3 {
     font-size: 1.5em;
 }
