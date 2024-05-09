@@ -6,14 +6,14 @@ import WelcomeImg from '../../assets/images/welcome-img.png'
 function Welcome() {
   return (
     <main>
-        <h1>Veteriari</h1>
-        <h2>Servicio veterinario a domicilio</h2>
-        <div>
+        <h1 data-aos="fade-up">Veteriari</h1>
+        <h2 data-aos="fade-up">Servicio veterinario a domicilio</h2>
+        <div data-aos="fade-up">
             <button className='consulta-btn'>Solicitar consulta</button>
             <button className='whatsapp-btn'>Whatsapp</button>
         </div>
         <div class="wave-container"></div>
-        <img src={WelcomeImg} className='welcome-img'></img>
+        <img data-aos="fade-in" src={WelcomeImg} className='welcome-img'></img>
     </main>
   );
 }

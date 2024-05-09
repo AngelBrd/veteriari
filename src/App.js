@@ -1,3 +1,6 @@
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import './styles/App.css';
 import Header from './components/header/Header';
 import Welcome from './components/welcome/Welcome';
@@ -7,7 +10,15 @@ import PricesSection from './components/prices-section/Prices-section';
 import Contact from './components/contact-section/Contact';
 import Footer from './components/footer/Footer';
 
+
+
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000
+    });
+  }, []);
+
   return (
     <div>
       <Header></Header>

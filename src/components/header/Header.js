@@ -6,16 +6,16 @@ import HamburgerMenu from '../menu/Menu';
 
 function Header() {
   return (
-    <header>
+    <header data-aos="fade-zoom-in">
         <img src={Logo}></img>
         <HamburgerMenu></HamburgerMenu>
       <nav>
         <ul>
-          <li><a href="/">Servicios</a></li>
-          <li><a href="/">Precios</a></li>
-          <li><a href="/about">Acerca de</a></li>
-          <li><a href="/contact">Contacto</a></li>
-          <li><a href="/about">Blog</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="/">Blog</a></li>
           <li className='tel-li'>55 8341 2926</li>
           <li><button className='visit-btn'>Solicitar Visita</button></li>
         </ul>

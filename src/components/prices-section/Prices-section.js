@@ -4,10 +4,10 @@ import CheckImg from '../../assets/images/check.svg';
 
 function PricesSection() {
   return (
-    <section className='prices-section'>
-      <h3 className='subtitle2'>Precios veterinario a domicilio</h3>
+    <section className='prices-section' id='precios'>
+      <h3 className='subtitle2' data-aos="fade-right">Precios veterinario a domicilio</h3>
       <div className='cards-container'>
-        <div className='card'>
+        <div className='card' data-aos="flip-left">
           <div className='card-content'>
             <div className='card-header'>
               <h4>Visita Veterinaria a Domicilio</h4>
@@ -55,7 +55,7 @@ function PricesSection() {
           </div>
         </div>
         
-        <div className='card'>
+        <div className='card' data-aos="flip-right">
           <div className='card-content'>
             <div className='card-header'>
               <h4>Vacuna a domicilio</h4>
@@ -105,7 +105,7 @@ function PricesSection() {
           </div>
         </div>
 
-        <div className='card'>
+        <div className='card' data-aos="flip-left">
           <div className='card-content'>
             <div className='card-header'>
               <h4>Análisis a domicilio</h4>

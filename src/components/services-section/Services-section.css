@@ -14,12 +14,13 @@
 .flex-container .perakeet-img {
     position: relative;
     width: 16em;
-    bottom: -2em;
+    bottom: -1em;
 }
 
 .services-section p {
     margin: 0;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .services-icons {
