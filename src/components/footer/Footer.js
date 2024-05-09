@@ -16,7 +16,7 @@ function Footer() {
                 <a src='/'><img src={InstaIcon} className='insta-icon'></img></a>
                 <a src='/'><img src={FacebookIcon} className='facebook-icon'></img></a>
             </div>
-            <p data-aos="fade-in">Copyright © 2024 Veteriari</p>
+            <p>Copyright © 2024 Veteriari</p>
             <img src={DogImg} className='dog-img' data-aos="fade-in"></img>
         </footer>
     </section>
