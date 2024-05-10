@@ -5,6 +5,7 @@ import Logo from '../../assets/images/logo-no-background.png';
 import HamburgerMenu from '../menu/Menu';
 
 function Header() {
+  // eslint-disable-next-line no-unused-vars
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
