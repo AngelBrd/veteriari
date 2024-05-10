@@ -18,34 +18,42 @@ function App() {
 
   useEffect(() => {
     AOS.init({
-      duration: 3000
+      duration: 2000
     });
   }, []);
+
+  useEffect(() => {
+    if (showContactForm) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [showContactForm]);
 
   return (
     <div>
       <Router>
-        {!showContactForm && (
-          <>
-            <Header />
-            <Welcome />
-            <FirstSection />
-            <ServicesSection />
-            <PricesSection />
-            <Contact setShowContactForm={setShowContactForm} />
-            <Footer />
-          </>
+        {showContactForm && (
+          <div className="modal-background">
+            <div className="modal" data-aos="fade-up">
+              <ContactForm onClose={() => setShowContactForm(false)} />
+            </div>
+          </div>
         )}
+
+        <div className={`content ${showContactForm ? 'blur' : ''}`}>
+          <Header />
+          <Welcome setShowContactForm={setShowContactForm} />
+          <FirstSection />
+          <ServicesSection />
+          <PricesSection />
+          <Contact setShowContactForm={setShowContactForm} />
+          <Footer />
+        </div>
 
         <Routes>
           <Route path='/contact-form' element={<ContactForm />} />
         </Routes>
-
-        {showContactForm && (
-          <div>
-            <ContactForm />
-          </div>
-        )}
       </Router>
     </div>
   );

@@ -79,9 +79,16 @@ main div .whatsapp-btn {
     border: 1px solid #231942;
 }
 
+.whatsapp-btn a {
+  color: #231942;
+}
+
+.whatsapp-btn a:hover {
+  color: #fff;
+}
+
 .whatsapp-btn:hover {
   background-color: #231942;
-  color: white;
 }
 
 @media only screen and (max-width: 480px) {

@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { useState } from 'react'; // Importar useState
 import './Header.css';
 import Logo from '../../assets/images/logo-no-background.png';
 import HamburgerMenu from '../menu/Menu';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header data-aos="fade-zoom-in">
-        <img src={Logo}></img>
-        <HamburgerMenu></HamburgerMenu>
+      <img src={Logo}></img>
+      <HamburgerMenu setIsMenuOpen={setIsMenuOpen} />
       <nav>
         <ul>
           <li><a href="#servicios">Servicios</a></li>

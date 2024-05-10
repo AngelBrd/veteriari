@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Menu.css";
 import { Squash as Hamburger } from "hamburger-react";
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ setIsMenuOpen }) => {
   const [isOpen, setOpen] = useState(false);
 
   const toggleMenu = () => {
     setOpen(!isOpen);
+    setIsMenuOpen(!isOpen);
   };
 
   const closeMenu = () => {
     setOpen(false);
+    setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   return (
     <>
