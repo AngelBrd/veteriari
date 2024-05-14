@@ -2,7 +2,12 @@ import React from 'react';
 import './Prices-section.css';
 import CheckImg from '../../assets/images/check.svg';
 
-function PricesSection() {
+function PricesSection({ setShowContactForm }) {
+
+  const handleContactClick = () => {
+    setShowContactForm(true);
+  };
+
   return (
     <section className='prices-section' id='precios'>
       <h3 className='subtitle2' data-aos="fade-right">Precios veterinario a domicilio</h3>
@@ -51,7 +56,7 @@ function PricesSection() {
                 </div>
               </div>
             </div>
-            <button className='card-btn'>Visita Veterinaria</button>
+            <button className='card-btn' onClick={handleContactClick}>Solicitar Visita</button>
           </div>
         </div>
         
@@ -101,7 +106,7 @@ function PricesSection() {
                 </div>
               </div>
             </div>
-            <button className='card-btn'>Solicitar Vacuna</button>
+            <button className='card-btn' onClick={handleContactClick}>Solicitar Vacuna</button>
           </div>
         </div>
 
@@ -148,7 +153,7 @@ function PricesSection() {
                 </div>
               </div>
             </div>
-            <button className='card-btn'>Solicitar Anáisis</button>
+            <button className='card-btn' onClick={handleContactClick}>Solicitar Anáisis</button>
           </div>
         </div>
       </div>

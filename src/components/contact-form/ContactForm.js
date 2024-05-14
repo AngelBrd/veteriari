@@ -28,11 +28,17 @@ function ContactForm({ onClose }) {
         <label htmlFor="cel">Número de celular:</label>
         <input type="tel" id="cel" name="cel" value={cel} onChange={(e) => setCel(e.target.value)} />
 
-        <label htmlFor="date">Fecha:</label>
-        <input type="date" id="date" name="date" value={date} onChange={(e) => setDate(e.target.value)} />
+        <div className='date-time-div'>
+          <div className='column-input-div'>
+            <label htmlFor="date">Fecha:</label>
+            <input type="date" id="date" name="date" value={date} onChange={(e) => setDate(e.target.value)} />
+          </div>
 
-        <label htmlFor="date">Hora:</label>
-        <input type="time" id="time" name="time" value={time} onChange={(e) => setTime(e.target.value)} />
+          <div className='column-input-div'>
+            <label htmlFor="date">Hora:</label>
+            <input type="time" id="time" name="time" value={time} onChange={(e) => setTime(e.target.value)} />
+          </div>
+        </div>
 
         <div className='send-div'>
           <button type="submit" className='send-button'>Enviar</button>

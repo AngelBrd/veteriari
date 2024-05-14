@@ -42,11 +42,11 @@ function App() {
         )}
 
         <div className={`content ${showContactForm ? 'blur' : ''}`}>
-          <Header />
+          <Header setShowContactForm={setShowContactForm} />
           <Welcome setShowContactForm={setShowContactForm} />
           <FirstSection />
           <ServicesSection />
-          <PricesSection />
+          <PricesSection setShowContactForm={setShowContactForm} />
           <Contact setShowContactForm={setShowContactForm} />
           <Footer />
         </div>

@@ -23,6 +23,21 @@ form input {
     margin-bottom: 40px;
 }
 
+.date-time-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.column-input-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-input-div input {
+    margin-top: 10px;
+}
+
 .close-div {
     width: 100%;
     display: flex;
@@ -51,7 +66,7 @@ form input {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    margin-top: 40px;
+    margin-top: 50px;
     font-weight: bolder;
     padding: 8px;
     width: 50%;

@@ -39,9 +39,12 @@ const HamburgerMenu = ({ setIsMenuOpen }) => {
           <a className="menu-item" href="#contacto" onClick={closeMenu}>
             Contacto
           </a>
-          <a className="menu-item" href="/" onClick={closeMenu}>
-            Blog
+          <a className="menu-item" href="#about" onClick={closeMenu}>
+            Acerca de
           </a>
+          {/* <a className="menu-item" href="/" onClick={closeMenu}>
+            Blog
+          </a> */}
         </div>
       </div>
     </>
