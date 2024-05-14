@@ -32,10 +32,12 @@ form input {
 .column-input-div {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .column-input-div input {
     margin-top: 10px;
+    width: auto;
 }
 
 .close-div {
