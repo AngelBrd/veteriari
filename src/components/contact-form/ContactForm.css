@@ -4,6 +4,15 @@ form {
     gap: 10px;
 }
 
+.error-toast {
+    background-color: #ffcccc;
+    color: #cc0000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}  
+
 form label {
     font-weight: bolder;
     width: auto;
