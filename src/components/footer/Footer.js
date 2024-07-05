@@ -11,12 +11,13 @@ function Footer() {
   return (
     <section className='section-footer'>
         <footer>
-            <div data-aos="fade-in">
+            {/* <div data-aos="fade-in">
                 <a src='/'><img src={XIcon} className='x-icon'></img></a>
                 <a src='/'><img src={InstaIcon} className='insta-icon'></img></a>
                 <a src='/'><img src={FacebookIcon} className='facebook-icon'></img></a>
-            </div>
+            </div> */}
             <p>Copyright © 2024 Veteriari</p>
+            <p>Desarrollado por Angel Brand</p>
             <img src={DogImg} className='dog-img' data-aos="fade-in"></img>
         </footer>
     </section>

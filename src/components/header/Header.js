@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react'; // Importar useState
 import './Header.css';
-import Logo from '../../assets/images/logo-no-background.png';
+import Logo from '../../assets/images/veteriari-logo.png';
 import HamburgerMenu from '../menu/Menu';
 
 function Header({ setShowContactForm }) {
