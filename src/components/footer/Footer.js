@@ -3,9 +3,9 @@
 import React from 'react';
 import './Footer.css';
 import DogImg from '../../assets/images/dog-img.png'
-import XIcon from '../../assets/images/x-icon.svg';
-import InstaIcon from '../../assets/images/insta-icon.svg';
-import FacebookIcon from '../../assets/images/facebook-icon.svg';
+// import XIcon from '../../assets/images/x-icon.svg';
+// import InstaIcon from '../../assets/images/insta-icon.svg';
+// import FacebookIcon from '../../assets/images/facebook-icon.svg';
 
 function Footer() {
   return (
